@@ -1,27 +1,29 @@
 # Grafos en C++ (listas de adyacencia)
 
-Implementación de grafos en C++ con listas de adyacencia basadas en nodos enlazados. El proyecto incluye grafos dirigidos y no dirigidos, con soporte para pesos en aristas, y ejemplos de entrada para probar distintas topologías (estrella, rueda, ciclo, hipercubo, etc.).
+Implementación de grafos en C++ con listas de adyacencia basadas en nodos enlazados. El proyecto incluye grafos dirigidos y no dirigidos, con soporte para pesos en aristas, y ejemplos de entrada para probar distintas topologías.
 
 ## Estructura del proyecto
 
 - **`main.cpp`**: Programa principal con ejemplos de uso/ejecución.
 - **`grafoDir/`**: Implementación de la librería de grafos en C++ (plantillas y cabeceras):
-  - `Grafos.hpp`, `Grafos.tpp`: Interfaz/genéricos comunes del grafo.
   - `GrafosDir.hpp`, `GrafosDir.tpp`: Implementación para grafos dirigidos.
   - `GrafosNoDir.hpp`, `GrafosNoDir.tpp`: Implementación para grafos no dirigidos.
   - `NodoVertice.hpp`, `NodoVertice.tpp`: Nodo de vértice (info del vértice, punteros y adyacencias).
   - `NodoArco.hpp`, `NodoArco.tpp`: Nodo/arista (destino, peso y punteros).
-- **Archivos de entrada**: `grafo_*.in`, `entrada*.txt` con grafos de ejemplo.
-- **Binario**: `grafos` (generado tras compilar con make).
-- **`tests/`**: Carpeta para pruebas (si corresponde).
+
+## Documentación de API
+
+Consulta la referencia completa de clases y métodos en [API.md](API.md):
+
+- `Grafos<T>`: base y utilidades comunes.
+- `GrafosDir<T>`: arcos dirigidos, sucesores/predecesores, mapeado.
+- `GrafosNoDir<T>`: arcos no dirigidos, vecinos, mapeado.
 
 ## Requisitos
 
 - Compilador C++ (GCC/Clang) con soporte C++17 o superior.
 - `make` (para usar el Makefile del proyecto).
 - Linux/WSL o entorno similar.
-
-## Compilación
 
 ```bash
 make
