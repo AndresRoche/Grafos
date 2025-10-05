@@ -1,0 +1,9 @@
+libreria_grafo_ia/
+build/
+grafo_*.in
+
+Makefile
+*.txt
+*.zip
+tests/
+grafos
